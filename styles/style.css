@@ -164,21 +164,20 @@ html, body {
         }
     }
 
-    <!--image-->
-        <div>
-    class="about-image" {
-       style="width: 100%;
+   /* IMAGE. */
+    & .about-image {
+        width: 100%;
         max-width: 500px;
-        margin:auto;">
+        min-width: 100px;
         /*  Will shrink on smaller screens */
         aspect-ratio: 1 / 1;
         /* Keeps it square, you can tweak */
-        <img src="image.png" alt="Muskan Tamang"
-        style="width:100%
+        background-image: url("../assets/images/image.png");
+        background-size: cover;
         background-position: center;
-        height:auto;display:block;
-        object-fit:cover;"/>
-        </div>
+        border-radius: 10px;
+
+        &:hover {
 
         &:hover {
             cursor: pointer;
